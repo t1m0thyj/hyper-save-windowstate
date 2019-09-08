@@ -19,12 +19,14 @@ function init() {
 exports.onWindow = (win) => {
     init();
 
-    win.setBounds({
-        x: mainWindowState.x || 50,
-        y: mainWindowState.y || 50,
-        width: mainWindowState.width,
-        height: mainWindowState.height
-    });
+    if (mainWindowState.x && mainWindowState.y) {
+        win.setBounds({
+            x: mainWindowState.x,
+            y: mainWindowState.y,
+            width: mainWindowState.width,
+            height: mainWindowState.height
+        });
+    }
 
     mainWindowState.manage(win);
 };
