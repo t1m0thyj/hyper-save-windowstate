@@ -20,8 +20,8 @@ exports.onWindow = (win) => {
     init();
 
     win.setBounds({
-        x: mainWindowState.x,
-        y: mainWindowState.y,
+        x: mainWindowState.x || 50,
+        y: mainWindowState.y || 50,
         width: mainWindowState.width,
         height: mainWindowState.height
     });
@@ -32,10 +32,10 @@ exports.onWindow = (win) => {
 // Render maximize/restore button correctly
 exports.reduceUI = (state, action) => {
     switch (action.type) {
-        case 'CONFIG_LOAD':
-        case 'CONFIG_RELOAD': {
+        case "CONFIG_LOAD":
+        case "CONFIG_RELOAD": {
             init();
-            return state.set('maximized', mainWindowState.isMaximized);
+            return state.set("maximized", mainWindowState.isMaximized);
         }
     }
 
