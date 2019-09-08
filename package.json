@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Hyper plugin that saves and restores window state after restart",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t1m0thyj/hyper-save-windowstate.git"
+  },
   "keywords": [
     "hyper",
     "hyper.app",
@@ -10,6 +14,10 @@
   ],
   "author": "t1m0thyj",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/t1m0thyj/hyper-save-windowstate/issues"
+  },
+  "homepage": "https://github.com/t1m0thyj/hyper-save-windowstate#readme",
   "dependencies": {
     "electron-window-state": "^5.0.3"
   }
