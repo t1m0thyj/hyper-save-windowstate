@@ -1,0 +1,16 @@
+{
+  "name": "hyper-save-windowstate",
+  "version": "1.0.0",
+  "description": "Hyper plugin that saves and restores window state after restart",
+  "main": "index.js",
+  "keywords": [
+    "hyper",
+    "hyper.app",
+    "hyper-plugin"
+  ],
+  "author": "t1m0thyj",
+  "license": "MIT",
+  "dependencies": {
+    "electron-window-state": "^5.0.3"
+  }
+}
