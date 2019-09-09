@@ -1,7 +1,7 @@
 let windowStateKeeper;
 let mainWindowState;
 
-// Load window state
+// Lazy load window state singleton
 function init() {
     if (!windowStateKeeper) {
         windowStateKeeper = require("electron-window-state");
@@ -19,7 +19,7 @@ function init() {
 exports.onWindow = (win) => {
     init();
 
-    if (mainWindowState.x && mainWindowState.y) {
+    if ((mainWindowState.x !== undefined) && (mainWindowState.y !== undefined)) {
         win.setBounds({
             x: mainWindowState.x,
             y: mainWindowState.y,

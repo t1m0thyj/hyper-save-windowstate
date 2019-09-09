@@ -1,6 +1,6 @@
 {
   "name": "hyper-save-windowstate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hyper plugin that saves and restores window state after restart",
   "main": "index.js",
   "repository": {
