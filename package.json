@@ -1,7 +1,7 @@
 {
   "name": "hyper-save-windowstate",
-  "version": "1.0.3",
-  "description": "Hyper plugin that saves and restores window state after restart",
+  "version": "1.0.4",
+  "description": "Hyper plugin that saves and restores window position/size after restart",
   "main": "index.js",
   "repository": {
     "type": "git",

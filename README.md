@@ -1,5 +1,5 @@
 # hyper-save-windowstate
-[Hyper](https://github.com/zeit/hyper) plugin that saves and restores window state after restart
+[Hyper](https://github.com/zeit/hyper) plugin that saves and restores window position/size after restart
 
 ## Installation
 
