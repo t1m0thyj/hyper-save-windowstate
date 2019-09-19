@@ -4,13 +4,14 @@ let mainWindowState;
 // Lazy load window state singleton
 function init() {
     if (!windowStateKeeper) {
-        windowStateKeeper = require("electron-window-state");
+        windowStateKeeper = require("./electron-window-state");
     }
 
     if (!mainWindowState) {
         mainWindowState = windowStateKeeper({
-            defaultWidth: 540,
-            defaultHeight: 380
+            defaultWidth: 800,
+            defaultHeight: 600,
+            resetToCenter: true
         });
     }
 }
