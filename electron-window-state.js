@@ -54,8 +54,6 @@ module.exports = function (options) {
   }
 
   function windowWithinBounds(bounds) {
-    console.log(bounds.x, bounds.y, bounds.width, bounds.height);
-    console.log(state.x, state.y, state.width, state.height);
     return (
       state.x >= bounds.x &&
       state.y >= bounds.y &&
