@@ -2,7 +2,7 @@ let windowStateKeeper;
 let mainWindowState;
 
 // Lazy load window state singleton
-function init({app, screen, remote}) {
+function init({ app, screen, remote }) {
     if (!windowStateKeeper) {
         windowStateKeeper = require("./electron-window-state");
     }
