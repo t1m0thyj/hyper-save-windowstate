@@ -56,6 +56,8 @@ exports.onWindow = (win) => {
 // Render maximize/restore button correctly
 exports.reduceUI = (state, action) => {
     const electron = getElectron();
+
+    // renderer requires remote module
     if (electron.remote == null) {
         getRemote(electron);
     }
