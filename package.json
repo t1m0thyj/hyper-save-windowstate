@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/t1m0thyj/hyper-save-windowstate#readme",
   "dependencies": {
+    "@electron/remote": "^2.0.8",
     "jsonfile": "^5.0.0",
     "mkdirp": "^0.5.1"
   }
