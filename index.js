@@ -21,19 +21,15 @@ function getElectron() {
     return electron;
 }
 
-function getRemote(electron) {
+function getRemote() {
     // "remote" module was deprecated in Electron 12, and will be removed in Electron 14
     // https://www.electronjs.org/docs/latest/breaking-changes#removed-remote-module
     const { app: remoteApp, screen: remoteScreen } = require('@electron/remote');
 
-    if (electron.remote == null) {
-        electron.remote = {
-            app: remoteApp,
-            screen: remoteScreen
-        };
-    }
-
-    return electron;
+    return {
+        app: remoteApp,
+        screen: remoteScreen
+    };
 }
 
 // Apply window state and monitor changes
@@ -59,7 +55,7 @@ exports.reduceUI = (state, action) => {
 
     // renderer requires remote module
     if (electron.remote == null) {
-        getRemote(electron);
+        electron.remote = getRemote();
     }
 
     switch (action.type) {
