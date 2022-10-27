@@ -3,13 +3,10 @@
 'use strict';
 
 const path = require('path');
-const electron = require('electron');
 const jsonfile = require('jsonfile');
 const mkdirp = require('mkdirp');
 
-module.exports = function (options) {
-  const app = electron.app || electron.remote.app;
-  const screen = electron.screen || electron.remote.screen;
+module.exports = function (options, app, screen) {
   let state;
   let winRef;
   let stateChangeTimer;
